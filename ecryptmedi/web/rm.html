@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1">  
+<title> REPORT MANAGEMENT PAGE</title>  
+ 
+<style>
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        } .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }.topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }.topnav a.active {
+            background-color: #00bcd4;
+            color: white;
+        }ul.breadcrumb {
+            padding: 10px 16px;
+            list-style: none;
+            background-color: #eee;
+        }ul.breadcrumb li {
+            display: inline;
+            font-size: 18px;
+        }ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        } ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }.button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }.button1 {background-color: #80deea;}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: black;
+}
+.container {
+  padding: 16px;
+}
+    </style>
+    </head> 
+<body>  
+ <form action="rm" method="post">
+           <center> <h1>||  HOSPITAL  ||</h1></center>
+        <div class="topnav">
+  <a class="active" href="doch.html">Home</a>
+        </div>
+    <ul class="breadcrumb">
+<li> <a href="doch.html"> HOME</a></li> 
+<li> <a href="rm.html"> PATIENT REPORT</a></li> 
+</ul>
+           <div class="container">
+   
+           <button class="button button1" name="add">ADD REPORT </button>
+            <br>
+                <button class="button button1" name="view">VIEW REPORT </button>
+                <br>
+                <button class="button button1" name="update">UPDATE REPORT </button>
+                <BR>
+                
+           </div>
+ </form>
+</body>  
+</html>  
